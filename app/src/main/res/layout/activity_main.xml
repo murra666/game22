@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#101827">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧠"
+            android:textSize="64sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ТРЕНИРОВКА ПАМЯТИ"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Найди все одинаковые пары!"
+            android:textColor="#B9C4D5"
+            android:textSize="16sp"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Уровень сложности"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 × 4"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#55D6BE"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 × 6"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#55D6BE"
+                android:layout_marginStart="24dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Новая игра"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:backgroundTint="#55D6BE"
+            android:textColor="#101827" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:text="Продолжить игру"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnRecords"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:text="Таблица рекордов"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>
